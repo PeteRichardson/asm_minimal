@@ -10,7 +10,7 @@ disasm: $(TARGET)
 	r2 -qq -e log.level=1 -A -c "pdf @main ; px 32 @sym.hello" $(TARGET)
 
 clean: 
-	rm -f $(TARGET)[12]
+	rm -f $(TARGET)
 	rm -rf *.dSYM
 	rm -f *.o
 
